@@ -1,4 +1,4 @@
-#include "permutations/permuatations.h"
+#include "permutations/permutations.h"
 #include <chrono>
 
 
@@ -16,8 +16,9 @@ int main() {
                                        binary_array(70, 9, 4)};
 
     //matrix A = create_bch_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/bch.txt");
-    matrix A = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix.txt");
-    //matrix A(test_array);
+    //matrix A = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix.txt");
+    matrix A(test_array);
+    A = toSpanForm(A);
     cout << A.print() << endl;
     int res = permut_compl2(A);
     cout << "result: " << res << endl;

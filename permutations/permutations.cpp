@@ -2,7 +2,7 @@
 // Created by Степан Прудников on 12/05/2020.
 //
 
-#include "permuatations.h"
+#include "permutations.h"
 
 int permut_compl(matrix &a) {
     vector<int> cols(a[0].size());
@@ -89,4 +89,5 @@ int permut_compl2(matrix &a) {
     }
     return res;
 }
+
 

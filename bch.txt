@@ -1,1 +1,5 @@
 1 1 0 1 1 1 0 1 0 1 0 1 1 1 0 1
+
+g++ -c main.cpp binary_array/binary_array.cpp matrix/matrix.cpp span_form/span_form.cpp diviser/diviser.cpp permutations/permuatations.cpp
+
+85 914 605
