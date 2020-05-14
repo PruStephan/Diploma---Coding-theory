@@ -16,12 +16,15 @@ int main() {
                                        binary_array(70, 9, 4)};
 
     //matrix A = create_bch_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/bch.txt");
-    //matrix A = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix.txt");
-    matrix A(test_array);
-    A = toSpanForm(A);
-    cout << A.print() << endl;
-    int res = permut_compl2(A);
-    cout << "result: " << res << endl;
+    matrix A = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix.txt");
+//    matrix A(test_array);
+    cout << A.print() <<endl;
+    pair<int, matrix> res = permut_first_half(A);
+    cout << A.print() <<endl;
+    cout << res.first << endl;
+    cout << res.second.print() << endl;
+    //int res = permut_compl2(A);
+    //cout << "result: " << res << endl;
 
 //    complexity = calculateComplexity(A);
 //    cout <<  "(";
@@ -30,7 +33,7 @@ int main() {
 //        cout <<complexity[i] << ", ";
 //    }
 //    cout << complexity.back() << ")" << endl;
-//
+
 
 /*
     auto start = std::chrono::high_resolution_clock::now();

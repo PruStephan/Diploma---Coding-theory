@@ -3,7 +3,6 @@
 //
 
 #include "../matrix/matrix.h"
-#include <algorithm>
 
 
 matrix toSpanForm(matrix m);

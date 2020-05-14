@@ -231,32 +231,32 @@ matrix/matrix.cpp.s:
 	$(MAKE) -f CMakeFiles/DiplomaProjectSpanForm.dir/build.make CMakeFiles/DiplomaProjectSpanForm.dir/matrix/matrix.cpp.s
 .PHONY : matrix/matrix.cpp.s
 
-permutations/permuatations.o: permutations/permuatations.cpp.o
+permutations/permutations.o: permutations/permutations.cpp.o
 
-.PHONY : permutations/permuatations.o
+.PHONY : permutations/permutations.o
 
 # target to build an object file
-permutations/permuatations.cpp.o:
-	$(MAKE) -f CMakeFiles/DiplomaProjectSpanForm.dir/build.make CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o
-.PHONY : permutations/permuatations.cpp.o
+permutations/permutations.cpp.o:
+	$(MAKE) -f CMakeFiles/DiplomaProjectSpanForm.dir/build.make CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o
+.PHONY : permutations/permutations.cpp.o
 
-permutations/permuatations.i: permutations/permuatations.cpp.i
+permutations/permutations.i: permutations/permutations.cpp.i
 
-.PHONY : permutations/permuatations.i
+.PHONY : permutations/permutations.i
 
 # target to preprocess a source file
-permutations/permuatations.cpp.i:
-	$(MAKE) -f CMakeFiles/DiplomaProjectSpanForm.dir/build.make CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.i
-.PHONY : permutations/permuatations.cpp.i
+permutations/permutations.cpp.i:
+	$(MAKE) -f CMakeFiles/DiplomaProjectSpanForm.dir/build.make CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.i
+.PHONY : permutations/permutations.cpp.i
 
-permutations/permuatations.s: permutations/permuatations.cpp.s
+permutations/permutations.s: permutations/permutations.cpp.s
 
-.PHONY : permutations/permuatations.s
+.PHONY : permutations/permutations.s
 
 # target to generate assembly for a file
-permutations/permuatations.cpp.s:
-	$(MAKE) -f CMakeFiles/DiplomaProjectSpanForm.dir/build.make CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.s
-.PHONY : permutations/permuatations.cpp.s
+permutations/permutations.cpp.s:
+	$(MAKE) -f CMakeFiles/DiplomaProjectSpanForm.dir/build.make CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.s
+.PHONY : permutations/permutations.cpp.s
 
 span_form/span_form.o: span_form/span_form.cpp.o
 
@@ -306,9 +306,9 @@ help:
 	@echo "... matrix/matrix.o"
 	@echo "... matrix/matrix.i"
 	@echo "... matrix/matrix.s"
-	@echo "... permutations/permuatations.o"
-	@echo "... permutations/permuatations.i"
-	@echo "... permutations/permuatations.s"
+	@echo "... permutations/permutations.o"
+	@echo "... permutations/permutations.i"
+	@echo "... permutations/permutations.s"
 	@echo "... span_form/span_form.o"
 	@echo "... span_form/span_form.i"
 	@echo "... span_form/span_form.s"

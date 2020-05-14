@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DiplomaProjectSpanForm.dir/diviser/diviser.cpp.o"
   "CMakeFiles/DiplomaProjectSpanForm.dir/main.cpp.o"
   "CMakeFiles/DiplomaProjectSpanForm.dir/matrix/matrix.cpp.o"
-  "CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o"
+  "CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o"
   "CMakeFiles/DiplomaProjectSpanForm.dir/span_form/span_form.cpp.o"
   "DiplomaProjectSpanForm"
   "DiplomaProjectSpanForm.pdb"

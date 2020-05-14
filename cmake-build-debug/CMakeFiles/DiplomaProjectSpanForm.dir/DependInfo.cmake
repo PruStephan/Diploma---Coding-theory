@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/stephan/CLionProjects/DiplomaLongLong/diviser/diviser.cpp" "/Users/stephan/CLionProjects/DiplomaLongLong/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/diviser/diviser.cpp.o"
   "/Users/stephan/CLionProjects/DiplomaLongLong/main.cpp" "/Users/stephan/CLionProjects/DiplomaLongLong/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/main.cpp.o"
   "/Users/stephan/CLionProjects/DiplomaLongLong/matrix/matrix.cpp" "/Users/stephan/CLionProjects/DiplomaLongLong/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/matrix/matrix.cpp.o"
-  "/Users/stephan/CLionProjects/DiplomaLongLong/permutations/permuatations.cpp" "/Users/stephan/CLionProjects/DiplomaLongLong/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o"
+  "/Users/stephan/CLionProjects/DiplomaLongLong/permutations/permutations.cpp" "/Users/stephan/CLionProjects/DiplomaLongLong/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o"
   "/Users/stephan/CLionProjects/DiplomaLongLong/span_form/span_form.cpp" "/Users/stephan/CLionProjects/DiplomaLongLong/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/span_form/span_form.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

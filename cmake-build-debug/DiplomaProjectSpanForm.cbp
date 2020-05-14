@@ -101,10 +101,10 @@
 		<Unit filename="/Users/stephan/CLionProjects/DiplomaLongLong/matrix/matrix.h">
 			<Option target="DiplomaProjectSpanForm"/>
 		</Unit>
-		<Unit filename="/Users/stephan/CLionProjects/DiplomaLongLong/permutations/permuatations.cpp">
+		<Unit filename="/Users/stephan/CLionProjects/DiplomaLongLong/permutations/permutations.cpp">
 			<Option target="DiplomaProjectSpanForm"/>
 		</Unit>
-		<Unit filename="/Users/stephan/CLionProjects/DiplomaLongLong/permutations/permuatations.h">
+		<Unit filename="/Users/stephan/CLionProjects/DiplomaLongLong/permutations/permutations.h">
 			<Option target="DiplomaProjectSpanForm"/>
 		</Unit>
 		<Unit filename="/Users/stephan/CLionProjects/DiplomaLongLong/span_form/span_form.cpp">

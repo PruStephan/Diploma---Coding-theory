@@ -6,3 +6,4 @@
 
 int permut_compl(matrix &a);
 int permut_compl2(matrix &a);
+pair<int, matrix> permut_first_half(matrix a);

@@ -66,6 +66,35 @@ bool next_permut(matrix &a, vector<int> &cols)
 }
 
 
+bool next_permut_with_n(int n, vector<int> &permut)
+{
+    size_t k = permut.size() - 1;
+    int j = k;
+    while(permut[j] == n + j - k)
+    {
+        j--;
+        if(j == -1)
+            break;
+    }
+    if(j == -1)
+        return false;
+    else {
+        permut[j]++;
+        for(int i = j; i < k; i++)
+            permut[i + 1] = permut[i] + 1;
+    }
+
+//    cout <<  "(";
+//    for(size_t i = 0; i < permut.size() - 1; i++)
+//    {
+//        cout <<permut[i] << ", ";
+//    }
+//    cout << permut.back() << ")" << endl;
+
+    return true;
+}
+
+
 int permut_compl2(matrix &a) {
     vector<int> cols(a[0].size());
     auto cmp = calculateComplexity(a);
@@ -77,13 +106,13 @@ int permut_compl2(matrix &a) {
     }
     unsigned long long iter = 0;
     while(next_permut(a, cols)){
-        cout << iter << endl;
-        iter++;
+        //cout << iter << endl;
+        //iter++;
         auto b = toSpanForm(a);
         cmp = calculateComplexity(b);
         if(*max_element(cmp.begin(), cmp.end()) < res) {
-            cout << "found" << endl << endl;
-            cout << b.print() << endl;
+            //cout << "found" << endl << endl;
+           // cout << b.print() << endl;
             res = *max_element(cmp.begin(), cmp.end());
         }
     }
@@ -91,3 +120,41 @@ int permut_compl2(matrix &a) {
 }
 
 
+pair<int, matrix> permut_first_half(matrix a)
+{
+    vector<int> cols(a[0].size() / 2);
+    auto cmp = calculateComplexity(a);
+    int res_cmp = *std::max_element(cmp.begin(), cmp.end());
+    matrix res_matrix = a;
+
+    for(size_t i = 0 ; i < cols.size(); i++)
+    {
+        cols[i] = i + 1;
+    }
+    unsigned long long iter = 0;
+
+    while(next_permut_with_n(a[0].size(), cols))
+    {
+        iter++;
+        cout << iter << endl;
+        matrix b = a;
+        for(size_t i = 0; i < cols.size(); i++)
+        {
+            for(size_t j = 0; j < a.cols.size(); j++)
+            {
+                if(b.cols[j] == cols[i])
+                    b.move(i, j);
+            }
+        }
+        //cout << b.print() << endl;
+        b = toSpanForm(b);
+        cmp = calculateComplexity(b);
+        if(*max_element(cmp.begin(), cmp.end()) < res_cmp) {
+            cout << "found" << endl << endl;
+            cout << b.print() << endl;
+            res_cmp = *max_element(cmp.begin(), cmp.end());
+            res_matrix = b;
+        }
+    }
+    return make_pair(res_cmp, res_matrix);
+}

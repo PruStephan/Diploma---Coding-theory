@@ -19,22 +19,26 @@ string
 /Users/stephan/CLionProjects/DiplomaLongLong/span_form/span_form.h
 
 /Users/stephan/CLionProjects/DiplomaLongLong/main.cpp
-permutations/permuatations.h
-/Users/stephan/CLionProjects/DiplomaLongLong/permutations/permuatations.h
+permutations/permutations.h
+/Users/stephan/CLionProjects/DiplomaLongLong/permutations/permutations.h
 chrono
 -
 
 /Users/stephan/CLionProjects/DiplomaLongLong/matrix/matrix.h
 ../binary_array/binary_array.h
 /Users/stephan/CLionProjects/DiplomaLongLong/binary_array/binary_array.h
+algorithm
+-
 
-/Users/stephan/CLionProjects/DiplomaLongLong/permutations/permuatations.h
+/Users/stephan/CLionProjects/DiplomaLongLong/permutations/permutations.cpp
+permutations.h
+/Users/stephan/CLionProjects/DiplomaLongLong/permutations/permutations.h
+
+/Users/stephan/CLionProjects/DiplomaLongLong/permutations/permutations.h
 ../diviser/diviser.h
 /Users/stephan/CLionProjects/DiplomaLongLong/diviser/diviser.h
 
 /Users/stephan/CLionProjects/DiplomaLongLong/span_form/span_form.h
 ../matrix/matrix.h
 /Users/stephan/CLionProjects/DiplomaLongLong/matrix/matrix.h
-algorithm
--
 

@@ -14,19 +14,19 @@ CMakeFiles/DiplomaProjectSpanForm.dir/main.cpp.o: ../binary_array/binary_array.h
 CMakeFiles/DiplomaProjectSpanForm.dir/main.cpp.o: ../diviser/diviser.h
 CMakeFiles/DiplomaProjectSpanForm.dir/main.cpp.o: ../main.cpp
 CMakeFiles/DiplomaProjectSpanForm.dir/main.cpp.o: ../matrix/matrix.h
-CMakeFiles/DiplomaProjectSpanForm.dir/main.cpp.o: ../permutations/permuatations.h
+CMakeFiles/DiplomaProjectSpanForm.dir/main.cpp.o: ../permutations/permutations.h
 CMakeFiles/DiplomaProjectSpanForm.dir/main.cpp.o: ../span_form/span_form.h
 
 CMakeFiles/DiplomaProjectSpanForm.dir/matrix/matrix.cpp.o: ../binary_array/binary_array.h
 CMakeFiles/DiplomaProjectSpanForm.dir/matrix/matrix.cpp.o: ../matrix/matrix.cpp
 CMakeFiles/DiplomaProjectSpanForm.dir/matrix/matrix.cpp.o: ../matrix/matrix.h
 
-CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o: ../binary_array/binary_array.h
-CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o: ../diviser/diviser.h
-CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o: ../matrix/matrix.h
-CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o: ../permutations/permuatations.cpp
-CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o: ../permutations/permuatations.h
-CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o: ../span_form/span_form.h
+CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o: ../binary_array/binary_array.h
+CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o: ../diviser/diviser.h
+CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o: ../matrix/matrix.h
+CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o: ../permutations/permutations.cpp
+CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o: ../permutations/permutations.h
+CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o: ../span_form/span_form.h
 
 CMakeFiles/DiplomaProjectSpanForm.dir/span_form/span_form.cpp.o: ../binary_array/binary_array.h
 CMakeFiles/DiplomaProjectSpanForm.dir/span_form/span_form.cpp.o: ../matrix/matrix.h

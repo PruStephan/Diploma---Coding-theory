@@ -54,3 +54,20 @@ void matrix::reverse(int x, int y) {
     }
 }
 
+void matrix::move(int to, int from) {
+    if(to < from)
+    {
+        for(int i = from; i > to; --i)
+        {
+            this->swap_bytes(i, i - 1);
+            swap(this->cols[i], this->cols[i - 1]);
+        }
+    } else {
+        for(int i = from; i < to; ++i)
+        {
+            this->swap_bytes(i, i + 1);
+            swap(this->cols[i], this->cols[i + 1]);
+        }
+    }
+}
+

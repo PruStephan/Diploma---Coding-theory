@@ -122,18 +122,18 @@ CMakeFiles/DiplomaProjectSpanForm.dir/diviser/diviser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DiplomaProjectSpanForm.dir/diviser/diviser.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/stephan/CLionProjects/DiplomaLongLong/diviser/diviser.cpp -o CMakeFiles/DiplomaProjectSpanForm.dir/diviser/diviser.cpp.s
 
-CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o: CMakeFiles/DiplomaProjectSpanForm.dir/flags.make
-CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o: ../permutations/permuatations.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/stephan/CLionProjects/DiplomaLongLong/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o -c /Users/stephan/CLionProjects/DiplomaLongLong/permutations/permuatations.cpp
+CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o: CMakeFiles/DiplomaProjectSpanForm.dir/flags.make
+CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o: ../permutations/permutations.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/stephan/CLionProjects/DiplomaLongLong/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o -c /Users/stephan/CLionProjects/DiplomaLongLong/permutations/permutations.cpp
 
-CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/stephan/CLionProjects/DiplomaLongLong/permutations/permuatations.cpp > CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.i
+CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/stephan/CLionProjects/DiplomaLongLong/permutations/permutations.cpp > CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.i
 
-CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/stephan/CLionProjects/DiplomaLongLong/permutations/permuatations.cpp -o CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.s
+CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/stephan/CLionProjects/DiplomaLongLong/permutations/permutations.cpp -o CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.s
 
 # Object files for target DiplomaProjectSpanForm
 DiplomaProjectSpanForm_OBJECTS = \
@@ -142,7 +142,7 @@ DiplomaProjectSpanForm_OBJECTS = \
 "CMakeFiles/DiplomaProjectSpanForm.dir/matrix/matrix.cpp.o" \
 "CMakeFiles/DiplomaProjectSpanForm.dir/span_form/span_form.cpp.o" \
 "CMakeFiles/DiplomaProjectSpanForm.dir/diviser/diviser.cpp.o" \
-"CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o"
+"CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o"
 
 # External object files for target DiplomaProjectSpanForm
 DiplomaProjectSpanForm_EXTERNAL_OBJECTS =
@@ -152,7 +152,7 @@ DiplomaProjectSpanForm: CMakeFiles/DiplomaProjectSpanForm.dir/binary_array/binar
 DiplomaProjectSpanForm: CMakeFiles/DiplomaProjectSpanForm.dir/matrix/matrix.cpp.o
 DiplomaProjectSpanForm: CMakeFiles/DiplomaProjectSpanForm.dir/span_form/span_form.cpp.o
 DiplomaProjectSpanForm: CMakeFiles/DiplomaProjectSpanForm.dir/diviser/diviser.cpp.o
-DiplomaProjectSpanForm: CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o
+DiplomaProjectSpanForm: CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o
 DiplomaProjectSpanForm: CMakeFiles/DiplomaProjectSpanForm.dir/build.make
 DiplomaProjectSpanForm: CMakeFiles/DiplomaProjectSpanForm.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/stephan/CLionProjects/DiplomaLongLong/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable DiplomaProjectSpanForm"
