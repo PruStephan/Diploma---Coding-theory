@@ -4,6 +4,8 @@
 #pragma once
 #include "../binary_array/binary_array.h"
 #include <algorithm>
+#include <set>
+
 
 
 using namespace std;
@@ -31,4 +33,5 @@ public:
     void reverse(int x, int y);
     void move(int to, int from);
     int count_ones(int i);
+    set<int> count_good_rows();
 };

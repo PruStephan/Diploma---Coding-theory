@@ -84,12 +84,12 @@ bool next_permut_with_n(int n, vector<int> &permut)
             permut[i + 1] = permut[i] + 1;
     }
 
-//    cout <<  "(";
-//    for(size_t i = 0; i < permut.size() - 1; i++)
-//    {
-//        cout <<permut[i] << ", ";
-//    }
-//    cout << permut.back() << ")" << endl;
+    cout <<  "(";
+    for(size_t i = 0; i < permut.size() - 1; i++)
+    {
+        cout <<permut[i] << ", ";
+    }
+    cout << permut.back() << ")" << endl;
 
     return true;
 }
@@ -111,8 +111,8 @@ int permut_compl2(matrix &a) {
         auto b = toSpanForm(a);
         cmp = calculateComplexity(b);
         if(*max_element(cmp.begin(), cmp.end()) < res) {
-            //cout << "found" << endl << endl;
-           // cout << b.print() << endl;
+            cout << "found" << endl << endl;
+            cout << b.print() << endl;
             res = *max_element(cmp.begin(), cmp.end());
         }
     }
@@ -123,8 +123,8 @@ int permut_compl2(matrix &a) {
 pair<int, matrix> permut_first_half(matrix a)
 {
     vector<int> cols(a[0].size() / 2);
-    auto cmp = calculateComplexity(a);
-    int res_cmp = *std::max_element(cmp.begin(), cmp.end());
+    auto cmp = a.count_good_rows();
+    int res_cmp = cmp.size();
     matrix res_matrix = a;
 
     for(size_t i = 0 ; i < cols.size(); i++)
@@ -146,13 +146,13 @@ pair<int, matrix> permut_first_half(matrix a)
                     b.move(i, j);
             }
         }
-        //cout << b.print() << endl;
         b = toSpanForm(b);
-        cmp = calculateComplexity(b);
-        if(*max_element(cmp.begin(), cmp.end()) < res_cmp) {
+        //cout << b.print() << endl;
+        cmp = b.count_good_rows();
+        if(cmp.size() < res_cmp) {
             cout << "found" << endl << endl;
             cout << b.print() << endl;
-            res_cmp = *max_element(cmp.begin(), cmp.end());
+            res_cmp = cmp.size();
             res_matrix = b;
         }
     }

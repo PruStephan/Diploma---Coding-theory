@@ -71,3 +71,11 @@ void matrix::move(int to, int from) {
     }
 }
 
+set<int> matrix::count_good_rows() {
+    set<int> res;
+    for(size_t i = 0; i < rows.size(); ++i){
+        if(rows[i].findFirst1() > rows[0].size() / 2 - 1  || rows[i].findLast1() <= rows[0].size() / 2)
+            res.insert(i);
+    }
+    return res;
+}

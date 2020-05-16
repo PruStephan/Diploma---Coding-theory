@@ -57,7 +57,7 @@ bool smart_plus(matrix a, int x, int y){
 void smart_col_swap(matrix &a) {
     bool flag = false;
     int iter = 0;
-    while(!flag && iter < 1000000) {
+    while(!flag && iter < 100) {
         flag = true;
         for(size_t i = 0; i < a.size(); i++) {
             int last = a[i].findLast1();
@@ -109,25 +109,30 @@ void smart_col_swap(matrix &a) {
     }
 }
 
-
-
-
-matrix diviser3(matrix a) {
-    a.swap_bytes(16, 15);
-    cout << a.print() << endl;
-    a.swap_bytes(12, 13);
-    cout << a.print() << endl;
-    a.swap_bytes(13, 14);
-    cout << a.print() << endl;
-    a.swap_bytes(14, 15);
-    cout << a.print() << endl;
-    a.swap_bytes(16, 17);
-    cout << a.print() << endl;
-    a.swap_bytes(17, 18);
-    cout << a.print() << endl;
-    a.swap_bytes(21, 22);
-    cout << a.print() << endl;
-    return a;
+void swap_to_halves(matrix &a) {
+    set<int> good_rows = a.count_good_rows();
+    bool flag = false;
+    int iter = 0;
+    while(!flag && iter < 2000) {
+        iter++;
+        cout << iter << endl;
+        flag = true;
+        matrix b = a;
+        for(int i = 0; i < a[0].size() - 1; ++i)
+        {
+            for(int j = i + 1; j < a[0].size(); ++j) {
+                b.swap_bytes(i, j);
+                b = toSpanForm(b);
+                if (b.count_good_rows().size() > good_rows.size()) {
+                    a = b;
+                    good_rows = b.count_good_rows();
+                    flag = false;
+                }
+            }
+        }
+    }
 }
+
+
 
 

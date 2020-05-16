@@ -13,27 +13,18 @@
   <component name="ChangeListManager">
     <list default="true" id="07976762-df72-4b1b-8c16-c6a17dd18246" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bch.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/diviser/diviser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/diviser/diviser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/matrix/matrix.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/matrix/matrix.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permuatations.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/span_form/span_form.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/span_form/span_form.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DiplomaProjectSpanForm" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DiplomaProjectSpanForm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DiplomaProjectSpanForm.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DiplomaProjectSpanForm.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diviser/diviser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/diviser/diviser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diviser/diviser.h" beforeDir="false" afterPath="$PROJECT_DIR$/diviser/diviser.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrix/matrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix/matrix.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrix/matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/matrix/matrix.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/permutations/permutations.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/permutations/permutations.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/permutations/permutations.h" beforeDir="false" afterPath="$PROJECT_DIR$/permutations/permutations.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/span_form/span_form.h" beforeDir="false" afterPath="$PROJECT_DIR$/span_form/span_form.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,8 +95,18 @@
       <workItem from="1589181148252" duration="16843000" />
       <workItem from="1589283795728" duration="10898000" />
       <workItem from="1589365827621" duration="8439000" />
-      <workItem from="1589443878476" duration="2146000" />
+      <workItem from="1589443878476" duration="3586000" />
+      <workItem from="1589557643164" duration="868000" />
+      <workItem from="1589623604357" duration="5759000" />
     </task>
+    <task id="LOCAL-00001" summary="permutation of half matrix added">
+      <created>1589448110697</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589448110697</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +124,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="permutation of half matrix added" />
+    <option name="LAST_COMMIT_MESSAGE" value="permutation of half matrix added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -154,7 +159,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>25</line>
+          <line>44</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -163,13 +168,8 @@
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/permutations/permutations.cpp</url>
-          <line>98</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>21</line>
+          <line>40</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -179,16 +179,35 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/permutations/permutations.cpp</url>
-          <line>148</line>
+          <line>149</line>
           <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/diviser/diviser.cpp</url>
+          <line>115</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/diviser/diviser.cpp</url>
+          <line>122</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/diviser/diviser.cpp</url>
+          <line>112</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/diviser/diviser.cpp</url>
+          <line>126</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
-        <watch expression="this-&gt;row" language="ObjectiveC" />
-        <watch expression="this-&gt;actual_size" language="ObjectiveC" />
-        <watch expression="this-&gt;array" language="ObjectiveC" />
+        <watch expression="good_rows.size()" language="ObjectiveC" />
+        <watch expression="b.count_good_rows().size()" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>
