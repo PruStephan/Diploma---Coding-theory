@@ -32,6 +32,7 @@ public:
     void swap_bytes(int i, int j);
     void reverse(int x, int y);
     void move(int to, int from);
+    void reset_rows();
     int count_ones(int i);
     set<int> count_good_rows();
 };

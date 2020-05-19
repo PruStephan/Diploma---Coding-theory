@@ -57,8 +57,10 @@ bool smart_plus(matrix a, int x, int y){
 void smart_col_swap(matrix &a) {
     bool flag = false;
     int iter = 0;
+    vector<int> cmp = calculateComplexity(a);
     while(!flag && iter < 100) {
         flag = true;
+        vector<int> old_cmp = cmp;
         for(size_t i = 0; i < a.size(); i++) {
             int last = a[i].findLast1();
             if(last == - 1)
@@ -92,18 +94,26 @@ void smart_col_swap(matrix &a) {
                         if(found) {
                             from_swap = j;
                             to_swap = k;
-                            flag = false;
+                            //flag = false;
                         }
                     }
                 }
             }
             if(to_swap != -1 && from_swap != -1)
                 a.swap_bytes(to_swap, from_swap);
-            cout << i << endl;
+            //cout << i << endl;
             //cout << a.print() << endl;
 
         }
         a = toSpanForm(a);
+        cmp = calculateComplexity(a);
+        for(size_t i = 0; i < cmp.size(); i++) {
+            if(cmp[i] != old_cmp[i])
+            {
+                flag = false;
+                break;
+            }
+        }
         iter++;
         cout << iter << endl;
     }
@@ -133,6 +143,113 @@ void swap_to_halves(matrix &a) {
     }
 }
 
+void swap_in_halves(matrix &a) {
+    vector<int> cmp = calculateComplexity(a);
+    int border = a[0].size() / 2 - 1;
+    bool flag = false;
+    int iter = 0;
+    while(!flag && iter < 2000) {
+        iter++;
+        cout << iter << endl;
+        flag = true;
+        matrix b = a;
+        for (int i = 0; i < border - 1; i++) {
+            for (int j = i + 1; j < border; j++) {
+                b.swap_bytes(i, j);
+                b = toSpanForm(b);
+                auto b_cmp = calculateComplexity(b);
+                if(compare_complexity(b_cmp, cmp) == -1)
+                {
+                    a = b;
+                    flag = false;
+                    cmp = b_cmp;
+                    break;
+                }
+            }
+            if(!flag)
+                break;
+        }
+    }
+    flag = false;
+    iter = 0;
+    cout << "started second half" << endl;
+    while(!flag && iter < 2000) {
+        iter++;
+        cout << iter << endl;
+        flag = true;
+        matrix b = a;
+        for (int i = border; i < a[0].size() - 1; i++) {
+            for (int j = i + 1; j < a[0].size(); j++) {
+                b.swap_bytes(i, j);
+                b = toSpanForm(b);
+                auto b_cmp = calculateComplexity(b);
+                if(compare_complexity(b_cmp, cmp) == -1)
+                {
+                    a = b;
+                    flag = false;
+                    cmp = b_cmp;
+                    break;
+                }
+            }
+            if(!flag)
+                break;
+        }
+    }
+}
+
+void smart_swap_in_halves(matrix &a) {
+    vector<int> cmp = calculateComplexity(a);
+    int border = a[0].size() / 2 - 1;
+    bool flag = false;
+    int iter = 0;
+    while(!flag && iter < 2000) {
+        iter++;
+        cout << iter << endl;
+        flag = true;
+        matrix b = a;
+        for (int i = 0; i < border - 1; i++) {
+            for (int j = i + 1; j < border; j++) {
+                b.swap_bytes(i, j);
+                b = toSpanForm(b);
+                auto b_cmp = calculateComplexity(b);
+                if(compare_complexity(b_cmp, cmp) == -1)
+                {
+                    a = b;
+                    flag = false;
+                    cmp = b_cmp;
+                    break;
+                }
+            }
+            if(!flag)
+                break;
+        }
+    }
+    flag = false;
+    iter = 0;
+    cout << "started second half" << endl;
+    while(!flag && iter < 2000) {
+        iter++;
+        cout << iter << endl;
+        flag = true;
+        matrix b = a;
+        for (int i = border; i < a[0].size() - 1; i++) {
+            for (int j = i + 1; j < a[0].size(); j++) {
+                b.swap_bytes(i, j);
+                b = toSpanForm(b);
+                auto b_cmp = calculateComplexity(b);
+                if(compare_complexity(b_cmp, cmp) == -1)
+                {
+                    a = b;
+                    flag = false;
+                    cmp = b_cmp;
+                    break;
+                }
+            }
+            if(!flag)
+                break;
+        }
+    }
+}
 
 
 

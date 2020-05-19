@@ -6,4 +6,5 @@
 
 void smart_col_swap(matrix &a);
 void swap_to_halves(matrix &a);
+void swap_in_halves(matrix &a);
 matrix diviser3(matrix a);

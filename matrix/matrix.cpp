@@ -79,3 +79,11 @@ set<int> matrix::count_good_rows() {
     }
     return res;
 }
+
+
+void matrix::reset_rows() {
+    cols = vector<int>(this->rows[0].size(), 0);
+    for(size_t i = 0; i < cols.size(); i++) {
+        cols[i] = i + 1;
+    }
+}

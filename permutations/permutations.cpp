@@ -149,7 +149,7 @@ pair<int, matrix> permut_first_half(matrix a)
         b = toSpanForm(b);
         //cout << b.print() << endl;
         cmp = b.count_good_rows();
-        if(cmp.size() < res_cmp) {
+        if(cmp.size() > res_cmp) {
             cout << "found" << endl << endl;
             cout << b.print() << endl;
             res_cmp = cmp.size();
@@ -158,3 +158,120 @@ pair<int, matrix> permut_first_half(matrix a)
     }
     return make_pair(res_cmp, res_matrix);
 }
+
+pair<int, matrix> permut_with_recursion(matrix a)
+{
+    vector<int> cols(a[0].size() / 2);
+    auto good_rows = a.count_good_rows();
+    auto cmp = calculateComplexity(a);
+    int res_good = good_rows.size();
+    matrix res_matrix = a;
+
+    for(size_t i = 0 ; i < cols.size(); i++)
+    {
+        cols[i] = i + 1;
+    }
+    unsigned long long iter = 0;
+
+    while(next_permut_with_n(a[0].size(), cols))
+    {
+        iter++;
+        cout << iter << endl;
+        matrix b = a;
+        for(size_t i = 0; i < cols.size(); i++)
+        {
+            for(size_t j = 0; j < a.cols.size(); j++)
+            {
+                if(b.cols[j] == cols[i])
+                    b.move(i, j);
+            }
+        }
+        good_rows = b.count_good_rows();
+        if(good_rows.size() < res_good) {
+            continue;
+        }
+        b = toSpanForm(b);
+        auto cur_cmp = calculateComplexity(b);
+        int max_cmp = *max_element(cur_cmp.begin(), cur_cmp.end());
+        if(max_cmp < *max_element(cmp.begin(), cmp.end())) {
+            cout << "found" << endl << endl;
+            cout << b.print() << endl;
+            res_good = good_rows.size();
+            res_matrix = b;
+            cmp = cur_cmp;
+        }
+    }
+    a.reset_rows();
+    cols.resize(0);
+    for(int i = 0; i < (a[0].size() - 1) / 4; i++) {
+        cols.push_back(i + 1);
+    }
+    while(next_permut_with_n((a[0].size() - 1) / 2, cols))
+    {
+        iter++;
+        cout << iter << endl;
+        matrix b = a;
+        for(size_t i = 0; i < cols.size(); i++)
+        {
+            for(size_t j = 0; j < a.cols.size(); j++)
+            {
+                if(b.cols[j] == cols[i])
+                    b.move(i, j);
+            }
+        }
+        good_rows = b.count_good_rows();
+        if(good_rows.size() < res_good) {
+            continue;
+        }
+        b = toSpanForm(b);
+        auto cur_cmp = calculateComplexity(b);
+        int max_cmp = *max_element(cur_cmp.begin(), cur_cmp.end());
+        if(max_cmp < *max_element(cmp.begin(), cmp.end())) {
+            cout << "found" << endl << endl;
+            cout << b.print() << endl;
+            res_good = good_rows.size();
+            res_matrix = b;
+            cmp = cur_cmp;
+        }
+    }
+
+    a.reset_rows();
+    cols.resize(0);
+    for(int i = 0; i < (a[0].size() - 1 ) / 4; i++) {
+        cols.push_back(i + (a[0].size() - 1) / 2 + 1);
+    }
+    while(next_permut_with_n(a[0].size(), cols))
+    {
+        iter++;
+        cout << iter << endl;
+        matrix b = a;
+        for(size_t i = 0; i < cols.size(); i++)
+        {
+            for(size_t j = 0; j < a.cols.size(); j++)
+            {
+                if(b.cols[j] == cols[i])
+                    b.move(i, j);
+            }
+        }
+        good_rows = b.count_good_rows();
+        if(good_rows.size() < res_good) {
+            continue;
+        }
+        b = toSpanForm(b);
+        auto cur_cmp = calculateComplexity(b);
+        int max_cmp = *max_element(cur_cmp.begin(), cur_cmp.end());
+        if(max_cmp < *max_element(cmp.begin(), cmp.end())) {
+            cout << "found" << endl << endl;
+            cout << b.print() << endl;
+            res_good = good_rows.size();
+            res_matrix = b;
+            cmp = cur_cmp;
+        }
+    }
+
+
+    return make_pair(res_good, res_matrix);
+}
+
+
+

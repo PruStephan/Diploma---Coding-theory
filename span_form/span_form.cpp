@@ -68,7 +68,7 @@ vector<int> calculateComplexity(matrix m) {
 }
 
 matrix random_shuffle(matrix A) {
-    for(size_t k = 0; k < 1; k++)
+    for(size_t k = 0; k < 10000; k++)
     {
         int i = rand() % A[0].size();
         int j = rand() % A[0].size();
@@ -164,4 +164,21 @@ matrix load_matrix(string filepath)
         ++i;
     }
     return matrix(ba);
+}
+
+pair<vector<int>, vector<int>> max_cmp_cols(vector<int> cmp) {
+    auto max = *max_element(cmp.begin(), cmp.end());
+    vector<int> res1, res2;
+    for(int i = 0; i < cmp.size() / 2 - 1; i++)
+    {
+        if(cmp[i] == max)
+            res1.push_back(i);
+    }
+    for(int i = cmp.size() / 2; i < cmp.size(); i++)
+    {
+        if(cmp[i] == max)
+            res2.push_back(i);
+    }
+
+    return make_pair(res1, res2);
 }
