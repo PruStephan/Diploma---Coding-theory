@@ -186,14 +186,13 @@ pair<int, matrix> permut_with_recursion(matrix a)
                     b.move(i, j);
             }
         }
+        b = toSpanForm(b);
         good_rows = b.count_good_rows();
         if(good_rows.size() < res_good) {
             continue;
         }
-        b = toSpanForm(b);
         auto cur_cmp = calculateComplexity(b);
-        int max_cmp = *max_element(cur_cmp.begin(), cur_cmp.end());
-        if(max_cmp < *max_element(cmp.begin(), cmp.end())) {
+        if(compare_complexity(cmp, cur_cmp) == 1) {
             cout << "found" << endl << endl;
             cout << b.print() << endl;
             res_good = good_rows.size();
@@ -219,14 +218,13 @@ pair<int, matrix> permut_with_recursion(matrix a)
                     b.move(i, j);
             }
         }
+        b = toSpanForm(b);
         good_rows = b.count_good_rows();
         if(good_rows.size() < res_good) {
             continue;
         }
-        b = toSpanForm(b);
         auto cur_cmp = calculateComplexity(b);
-        int max_cmp = *max_element(cur_cmp.begin(), cur_cmp.end());
-        if(max_cmp < *max_element(cmp.begin(), cmp.end())) {
+        if(compare_complexity(cmp, cur_cmp) == 1) {
             cout << "found" << endl << endl;
             cout << b.print() << endl;
             res_good = good_rows.size();
@@ -253,14 +251,13 @@ pair<int, matrix> permut_with_recursion(matrix a)
                     b.move(i, j);
             }
         }
+        b = toSpanForm(b);
         good_rows = b.count_good_rows();
         if(good_rows.size() < res_good) {
             continue;
         }
-        b = toSpanForm(b);
         auto cur_cmp = calculateComplexity(b);
-        int max_cmp = *max_element(cur_cmp.begin(), cur_cmp.end());
-        if(max_cmp < *max_element(cmp.begin(), cmp.end())) {
+        if(compare_complexity(cmp, cur_cmp) == 1) {
             cout << "found" << endl << endl;
             cout << b.print() << endl;
             res_good = good_rows.size();

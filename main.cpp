@@ -21,9 +21,9 @@ int main() {
 
     //matrix A = create_bch_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/bch.txt");
     matrix A = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix.txt");
-    matrix B = load_matrix("");
-    matrix C = load_matrix("");
-    matrix D = load_matrix("");
+//    matrix B = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix2.txt");
+//    matrix C = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix3.txt");
+//    matrix D = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix4.txt");
     vector<matrix> test;
     test.push_back(A);
 
@@ -38,12 +38,12 @@ int main() {
         try {
 
 
-            cout << A.print() << endl;
-            //auto res = permut_with_recursion(A);
-            //A = res.second;
-            out << A.print() << endl;
+            cout << test[i].print() << endl;
+            auto res = permut_with_recursion(A);
 
-            vector<int> complexity = calculateComplexity(A);
+            out << res.second.print() << endl;
+
+            vector<int> complexity = calculateComplexity(res.second);
             out << "(";
             for (size_t i = 0; i < complexity.size() - 1; i++) {
                 out << complexity[i] << ", ";
