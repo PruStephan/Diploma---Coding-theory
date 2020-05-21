@@ -18,6 +18,7 @@ public:
 
 
     explicit binary_array(unsigned long long a, int size, int row);
+    explicit binary_array() : array(0), actual_size(0), row(0) {};
     binary_array(std::vector<int> a, int row);
 
     int getRow() {

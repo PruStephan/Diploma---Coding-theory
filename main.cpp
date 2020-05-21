@@ -20,14 +20,15 @@ int main() {
                                        binary_array(70, 9, 4)};
 
 
-
+//    matrix A = create_bch_matrix("/home/prustephan/Diploma-half/Diploma---Coding-theory/bch.txt", 31);
 //    matrix A = load_matrix("/home/prustephan/Diploma-half/Diploma---Coding-theory/matrix.txt");
 //    matrix B = load_matrix("/home/prustephan/Diploma-half/Diploma---Coding-theory/matrix2.txt");
 //    matrix C = load_matrix("/home/prustephan/Diploma-half/Diploma---Coding-theory/matrix3.txt");
 //    matrix D = load_matrix("/home/prustephan/Diploma-half/Diploma---Coding-theory/matrix4.txt");
 
 
-    matrix A = create_bch_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/bch.txt");
+
+    matrix A = create_bch_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/bch.txt", 31);
     //matrix A = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix4.txt");
 //    matrix B = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix2.txt");
 //    matrix C = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix3.txt");
@@ -35,63 +36,69 @@ int main() {
     vector<matrix> test;
     test.push_back(A);
     //smart_col_swap(A);
-    swap_in_halves(A);
+    //swap_in_halves(A);
+
 
 
     //matrix A(test_array);
-    //A = random_shuffle(A);
-    //A = toSpanForm(A);
-
     cout << A.print() << endl;
 
-    matrix E = toSpanForm(A);
+    //A = random_shuffle(A);
+    //A = toSpanForm(A);
+    //cout << A.print() << endl;
+    //auto res = permut_with_recursion(A, A[0].size() / 2);
+
+    //cout << A.print() << endl;
+    //cout << res.second.print() << endl;
+
+//    matrix E = toSpanForm(A);
+//
+//
+//    double border = rand() % 6  +  10;
+//
+//
+    for(int i = 0; i < test.size(); i++)
+    {
+        ofstream out(out_filepath + to_string(i) + ".txt");
+        try {
 
 
-    double border = rand() % 6  +  10;
+            cout << test[i].print() << endl;
+            auto res = permut_with_recursion(test[i], test[i][0].size() / 2);
 
+            matrix cur = res.second;
+            swap_in_halves(cur);
+            smart_col_swap(cur);
 
-//    for(int i = 0; i < test.size(); i++)
-//    {
-//        ofstream out(out_filepath + to_string(i) + ".txt");
-//        try {
-//
-//
-//            cout << test[i].print() << endl;
-//            auto res = permut_with_recursion(test[i]);
-//
-//            matrix cur = res.second;
-//            swap_in_halves(cur);
-//            smart_col_swap(cur);
-//
-//            out << cur.print() << endl;
-//
-//            vector<int> complexity = calculateComplexity(res.second);
-//            out << "(";
-//            for (size_t i = 0; i < complexity.size() - 1; i++) {
-//                out << complexity[i] << ", ";
-//            }
-//
-//            out << complexity.back() << ")" << endl;
-//        } catch (...)
-//        {
-//            out << "Error";
-//        }
-//    }
+            out << cur.print() << endl;
 
-    vector<int> complexity = calculateComplexity(E);
-    cout << "(";
-    for (size_t i = 0; i < complexity.size() - 1; i++) {
-        cout << complexity[i] << ", ";
+            vector<int> complexity = calculateComplexity(res.second);
+            out << "(";
+            for (size_t i = 0; i < complexity.size() - 1; i++) {
+                out << complexity[i] << ", ";
+            }
+
+            out << complexity.back() << ")" << endl;
+        } catch (...)
+        {
+            out << "Error";
+        }
     }
-
-    cout << complexity.back() << ")" << endl;
-
-
-/*
-    auto start = std::chrono::high_resolution_clock::now();
-    matrix B = toSpanForm(A);
-    auto finish = std::chrono::high_resolution_clock::now();
-*/
+//
+//    vector<int> complexity = calculateComplexity(E);
+//    cout << "(";
+//    for (size_t i = 0; i < complexity.size() - 1; i++) {
+//        cout << complexity[i] << ", ";
+//    }
+//
+//    cout << complexity.back() << ")" << endl;
+//
+//
+///*
+//    auto start = std::chrono::high_resolution_clock::now();
+//    matrix B = toSpanForm(A);
+//    auto finish = std::chrono::high_resolution_clock::now();
+//*/
     return 0;
 }
 

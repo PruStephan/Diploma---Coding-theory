@@ -28,6 +28,8 @@ public:
         }
     }
 
+    explicit matrix() : rows(0), cols(0){}
+
     string print();
     void swap_bytes(int i, int j);
     void reverse(int x, int y);

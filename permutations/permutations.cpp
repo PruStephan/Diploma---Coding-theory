@@ -120,7 +120,7 @@ int permut_compl2(matrix &a) {
 }
 
 
-pair<int, matrix> permut_first_half(matrix a)
+pair<int, matrix> permut_first_half(matrix &a)
 {
     vector<int> cols(a[0].size() / 2);
     auto cmp = a.count_good_rows();
@@ -159,13 +159,15 @@ pair<int, matrix> permut_first_half(matrix a)
     return make_pair(res_cmp, res_matrix);
 }
 
-pair<int, matrix> permut_with_recursion(matrix a, int border)
+pair<int, matrix> permut_with_recursion(matrix &a, int border)
 {
     vector<int> cols(border);
     auto good_rows = a.count_good_rows();
     auto cmp = calculateComplexity(a);
     int res_good = good_rows.size();
     matrix res_matrix = a;
+    matrix b;
+    matrix c;
 
     for(size_t i = 0 ; i < cols.size(); i++)
     {
@@ -177,7 +179,7 @@ pair<int, matrix> permut_with_recursion(matrix a, int border)
     {
         iter++;
         cout << iter << endl;
-        matrix b = a;
+        b = a;
         for(size_t i = 0; i < cols.size(); i++)
         {
             for(size_t j = 0; j < a.cols.size(); j++)
@@ -186,6 +188,7 @@ pair<int, matrix> permut_with_recursion(matrix a, int border)
                     b.move(i, j);
             }
         }
+        c = b;
         b = toSpanForm(b);
         good_rows = b.count_good_rows();
         if(good_rows.size() < res_good) {
@@ -209,7 +212,7 @@ pair<int, matrix> permut_with_recursion(matrix a, int border)
     {
         iter++;
         cout << iter << endl;
-        matrix b = a;
+        b = a;
         for(size_t i = 0; i < cols.size(); i++)
         {
             for(size_t j = 0; j < a.cols.size(); j++)
@@ -218,6 +221,7 @@ pair<int, matrix> permut_with_recursion(matrix a, int border)
                     b.move(i, j);
             }
         }
+        c = b;
         b = toSpanForm(b);
         good_rows = b.count_good_rows();
         if(good_rows.size() < res_good) {
@@ -242,7 +246,7 @@ pair<int, matrix> permut_with_recursion(matrix a, int border)
     {
         iter++;
         cout << iter << endl;
-        matrix b = a;
+        b = a;
         for(size_t i = 0; i < cols.size(); i++)
         {
             for(size_t j = 0; j < a.cols.size(); j++)
@@ -251,6 +255,7 @@ pair<int, matrix> permut_with_recursion(matrix a, int border)
                     b.move(i, j);
             }
         }
+        c = b;
         b = toSpanForm(b);
         good_rows = b.count_good_rows();
         if(good_rows.size() < res_good) {
@@ -266,7 +271,7 @@ pair<int, matrix> permut_with_recursion(matrix a, int border)
         }
     }
 
-
+    cout << c.print() << endl;
     return make_pair(res_good, res_matrix);
 }
 

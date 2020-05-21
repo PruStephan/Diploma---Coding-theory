@@ -1,6 +1,1 @@
-1 1 0 1 1 1 0 1 0 1 0 1 1 1 0 1
-
-g++ -c main.cpp binary_array/binary_array.cpp matrix/matrix.cpp span_form/span_form.cpp diviser/diviser.cpp permutations/permutations.cpp
-g++ -o main main.o binary_array.o matrix.o span_form.o diviser.o permutations.o
-
-85 914 605
+1 0 0 0 1 1 1 1 1 0 1 0 1 1 1 1

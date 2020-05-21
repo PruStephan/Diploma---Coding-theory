@@ -28,7 +28,11 @@ string matrix::print()
     {
         res += rows[i].print();
     }
-    //cout << "]";
+
+    for(int i = 0; i < rows[0].size(); i++) {
+
+    }
+
     return res;
 }
 
