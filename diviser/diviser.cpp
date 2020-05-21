@@ -148,7 +148,7 @@ void swap_in_halves(matrix &a) {
     int border = a[0].size() / 2 - 1;
     bool flag = false;
     int iter = 0;
-    while(!flag && iter < 2000) {
+    while(!flag && iter < 20000) {
         iter++;
         cout << iter << endl;
         flag = true;
@@ -173,7 +173,7 @@ void swap_in_halves(matrix &a) {
     flag = false;
     iter = 0;
     cout << "started second half" << endl;
-    while(!flag && iter < 2000) {
+    while(!flag && iter < 20000) {
         iter++;
         cout << iter << endl;
         flag = true;

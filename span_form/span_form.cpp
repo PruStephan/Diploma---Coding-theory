@@ -115,7 +115,7 @@ std::pair<matrix, vector<int>> get_random_complexity(matrix A) {
 
 
 
-matrix create_bch_matrix(const string& filepath){
+matrix create_bch_matrix(const string& filepath, int code_size){
     ifstream in(filepath);
     vector<int> d;
     while(!in.eof())
@@ -126,9 +126,9 @@ matrix create_bch_matrix(const string& filepath){
     }
 
     int prefix = 0;
-    int suffix = 31 - d.size();
+    int suffix = code_size - d.size();
     vector<binary_array> m;
-    while (prefix + d.size() <= 31)
+    while (prefix + d.size() <= code_size)
     {
         vector<int> cur_pref(prefix, 0);
         vector<int> cur_suff(suffix, 0);

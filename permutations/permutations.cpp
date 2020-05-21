@@ -159,9 +159,9 @@ pair<int, matrix> permut_first_half(matrix a)
     return make_pair(res_cmp, res_matrix);
 }
 
-pair<int, matrix> permut_with_recursion(matrix a)
+pair<int, matrix> permut_with_recursion(matrix a, int border)
 {
-    vector<int> cols(a[0].size() / 2);
+    vector<int> cols(border);
     auto good_rows = a.count_good_rows();
     auto cmp = calculateComplexity(a);
     int res_good = good_rows.size();
@@ -202,10 +202,10 @@ pair<int, matrix> permut_with_recursion(matrix a)
     }
     a.reset_rows();
     cols.resize(0);
-    for(int i = 0; i < (a[0].size() - 1) / 4; i++) {
+    for(int i = 0; i < (border / 2); i++) {
         cols.push_back(i + 1);
     }
-    while(next_permut_with_n((a[0].size() - 1) / 2, cols))
+    while(next_permut_with_n(border, cols))
     {
         iter++;
         cout << iter << endl;
@@ -235,8 +235,8 @@ pair<int, matrix> permut_with_recursion(matrix a)
 
     a.reset_rows();
     cols.resize(0);
-    for(int i = 0; i < (a[0].size() - 1 ) / 4; i++) {
-        cols.push_back(i + (a[0].size() - 1) / 2 + 1);
+    for(int i = 0; i < border / 2; i++) {
+        cols.push_back(i + border + 1);
     }
     while(next_permut_with_n(a[0].size(), cols))
     {
