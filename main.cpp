@@ -27,8 +27,8 @@ int main() {
 //    matrix D = load_matrix("/home/prustephan/Diploma-half/Diploma---Coding-theory/matrix4.txt");
 
 
-
-    matrix A = create_bch_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/bch.txt", 31);
+    matrix A(test_array);
+    //matrix A = create_bch_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/bch.txt", 31);
     //matrix A = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix4.txt");
 //    matrix B = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix2.txt");
 //    matrix C = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix3.txt");
@@ -65,12 +65,15 @@ int main() {
 
             cout << test[i].print() << endl;
             auto res = permut_with_recursion(test[i], test[i][0].size() / 2);
+            auto res2 = permut_first_half(test[i]);
 
             matrix cur = res.second;
-            swap_in_halves(cur);
-            smart_col_swap(cur);
+            matrix cur2 = res2.second;
+            //swap_in_halves(cur);
+            //smart_col_swap(cur);
 
             out << cur.print() << endl;
+            out << cur2.print() << endl;
 
             vector<int> complexity = calculateComplexity(res.second);
             out << "(";
@@ -101,4 +104,5 @@ int main() {
 //*/
     return 0;
 }
+
 

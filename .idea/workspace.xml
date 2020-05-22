@@ -13,19 +13,11 @@
   <component name="ChangeListManager">
     <list default="true" id="07976762-df72-4b1b-8c16-c6a17dd18246" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bch.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/binary_array/binary_array.h" beforeDir="false" afterPath="$PROJECT_DIR$/binary_array/binary_array.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/diviser/diviser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/diviser/diviser.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DiplomaProjectSpanForm" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DiplomaProjectSpanForm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix/matrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix/matrix.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix/matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/matrix/matrix.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/permutations/permutations.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/permutations/permutations.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/permutations/permutations.h" beforeDir="false" afterPath="$PROJECT_DIR$/permutations/permutations.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/span_form/span_form.h" beforeDir="false" afterPath="$PROJECT_DIR$/span_form/span_form.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +97,8 @@
       <workItem from="1589906448146" duration="1025000" />
       <workItem from="1589963123236" duration="671000" />
       <workItem from="1589990486652" duration="1047000" />
-      <workItem from="1590057798133" duration="7319000" />
+      <workItem from="1590057798133" duration="8744000" />
+      <workItem from="1590170302476" duration="1239000" />
     </task>
     <task id="LOCAL-00001" summary="permutation of half matrix added">
       <created>1589448110697</created>
@@ -180,11 +173,6 @@
           <url>file://$PROJECT_DIR$/permutations/permutations.cpp</url>
           <line>107</line>
           <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/permutations/permutations.cpp</url>
-          <line>135</line>
-          <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/diviser/diviser.cpp</url>

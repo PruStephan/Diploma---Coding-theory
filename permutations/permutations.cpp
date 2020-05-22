@@ -199,10 +199,11 @@ pair<int, matrix> permut_with_recursion(matrix &a, int border)
             cout << "found" << endl << endl;
             cout << b.print() << endl;
             res_good = good_rows.size();
-            res_matrix = b;
+            res_matrix = c;
             cmp = cur_cmp;
         }
     }
+    a = res_matrix;
     a.reset_rows();
     cols.resize(0);
     for(int i = 0; i < (border / 2); i++) {
@@ -232,11 +233,11 @@ pair<int, matrix> permut_with_recursion(matrix &a, int border)
             cout << "found" << endl << endl;
             cout << b.print() << endl;
             res_good = good_rows.size();
-            res_matrix = b;
+            res_matrix = c;
             cmp = cur_cmp;
         }
     }
-
+    a = res_matrix;
     a.reset_rows();
     cols.resize(0);
     for(int i = 0; i < border / 2; i++) {
@@ -272,7 +273,7 @@ pair<int, matrix> permut_with_recursion(matrix &a, int border)
     }
 
     cout << c.print() << endl;
-    return make_pair(res_good, res_matrix);
+    return make_pair(res_good, toSpanForm(res_matrix));
 }
 
 
