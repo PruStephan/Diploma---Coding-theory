@@ -27,9 +27,9 @@ int main() {
 //    matrix D = load_matrix("/home/prustephan/Diploma-half/Diploma---Coding-theory/matrix4.txt");
 
 
-    matrix A(test_array);
-    //matrix A = create_bch_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/bch.txt", 31);
-    //matrix A = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix4.txt");
+    //matrix A(test_array);
+   matrix A = create_bch_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/bch.txt", 31, 11);
+    //matrix A = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix.txt");
 //    matrix B = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix2.txt");
 //    matrix C = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix3.txt");
 //    matrix D = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix4.txt");
@@ -37,11 +37,18 @@ int main() {
     test.push_back(A);
     //smart_col_swap(A);
     //swap_in_halves(A);
-
-
+    cout << A.print() << endl;
+    //swap_to_halves(A);
+//
+//    for(int i = 0; i < 2000000; i++)
+//    {
+//        cout << i << endl;
+//        A = random_shuffle(A);
+//    }
 
     //matrix A(test_array);
-    cout << A.print() << endl;
+    //A = toSpanForm(A);
+
 
     //A = random_shuffle(A);
     //A = toSpanForm(A);
@@ -65,17 +72,16 @@ int main() {
 
             cout << test[i].print() << endl;
             auto res = permut_with_recursion(test[i], test[i][0].size() / 2);
-            auto res2 = permut_first_half(test[i]);
+            //auto res2 = permut_first_half(test[i]);
 
-            matrix cur = res.second;
-            matrix cur2 = res2.second;
-            //swap_in_halves(cur);
-            //smart_col_swap(cur);
+            matrix cur = test[i];
+            smart_col_swap(cur);
+            swap_in_halves(cur);
 
             out << cur.print() << endl;
-            out << cur2.print() << endl;
+            //out << cur2.print() << endl;
 
-            vector<int> complexity = calculateComplexity(res.second);
+            vector<int> complexity = calculateComplexity(cur);
             out << "(";
             for (size_t i = 0; i < complexity.size() - 1; i++) {
                 out << complexity[i] << ", ";
@@ -87,8 +93,11 @@ int main() {
             out << "Error";
         }
     }
-//
-//    vector<int> complexity = calculateComplexity(E);
+
+
+//    A = toSpanForm(A);
+//    cout << A.print() << endl;
+//    vector<int> complexity = calculateComplexity(A);
 //    cout << "(";
 //    for (size_t i = 0; i < complexity.size() - 1; i++) {
 //        cout << complexity[i] << ", ";
@@ -96,7 +105,7 @@ int main() {
 //
 //    cout << complexity.back() << ")" << endl;
 //
-//
+
 ///*
 //    auto start = std::chrono::high_resolution_clock::now();
 //    matrix B = toSpanForm(A);

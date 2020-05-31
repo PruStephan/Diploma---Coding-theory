@@ -68,7 +68,7 @@ vector<int> calculateComplexity(matrix m) {
 }
 
 matrix random_shuffle(matrix A) {
-    for(size_t k = 0; k < 10000; k++)
+    for(size_t k = 0; k < 1; k++)
     {
         int i = rand() % A[0].size();
         int j = rand() % A[0].size();
@@ -115,7 +115,7 @@ std::pair<matrix, vector<int>> get_random_complexity(matrix A) {
 
 
 
-matrix create_bch_matrix(const string& filepath, int code_size){
+matrix create_bch_matrix(const string& filepath, int code_size, int k){
     ifstream in(filepath);
     vector<int> d;
     while(!in.eof())
@@ -128,7 +128,7 @@ matrix create_bch_matrix(const string& filepath, int code_size){
     int prefix = 0;
     int suffix = code_size - d.size();
     vector<binary_array> m;
-    while (prefix + d.size() <= code_size)
+    while (prefix + d.size() <= code_size && m.size() < k)
     {
         vector<int> cur_pref(prefix, 0);
         vector<int> cur_suff(suffix, 0);

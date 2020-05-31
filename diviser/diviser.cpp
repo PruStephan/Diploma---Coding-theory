@@ -58,7 +58,7 @@ void smart_col_swap(matrix &a) {
     bool flag = false;
     int iter = 0;
     vector<int> cmp = calculateComplexity(a);
-    while(!flag && iter < 100) {
+    while(!flag && iter < 10000) {
         flag = true;
         vector<int> old_cmp = cmp;
         for(size_t i = 0; i < a.size(); i++) {
@@ -69,6 +69,8 @@ void smart_col_swap(matrix &a) {
             int to_swap = -1;
             int first = a[i].findFirst1();
             for(int j = last; j > first; --j) {
+                if(a[i][j] != 1)
+                    continue;
                 int min = 0;
                 for (size_t k = a.size() - 1; k > i; k--) {
                     int cur_first = a[k].findFirst1();
@@ -153,6 +155,7 @@ void swap_in_halves(matrix &a) {
         cout << iter << endl;
         flag = true;
         matrix b = a;
+        auto old_cmp = cmp;
         for (int i = 0; i < border - 1; i++) {
             for (int j = i + 1; j < border; j++) {
                 b.swap_bytes(i, j);
@@ -166,8 +169,13 @@ void swap_in_halves(matrix &a) {
                     break;
                 }
             }
-            if(!flag)
+        }
+        for(size_t i = 0; i < cmp.size(); i++) {
+            if(cmp[i] != old_cmp[i])
+            {
+                flag = false;
                 break;
+            }
         }
     }
     flag = false;
@@ -178,6 +186,7 @@ void swap_in_halves(matrix &a) {
         cout << iter << endl;
         flag = true;
         matrix b = a;
+        auto old_cmp = cmp;
         for (int i = border; i < a[0].size() - 1; i++) {
             for (int j = i + 1; j < a[0].size(); j++) {
                 b.swap_bytes(i, j);
@@ -191,65 +200,14 @@ void swap_in_halves(matrix &a) {
                     break;
                 }
             }
-            if(!flag)
-                break;
-        }
-    }
-}
-
-void smart_swap_in_halves(matrix &a) {
-    vector<int> cmp = calculateComplexity(a);
-    int border = a[0].size() / 2 - 1;
-    bool flag = false;
-    int iter = 0;
-    while(!flag && iter < 2000) {
-        iter++;
-        cout << iter << endl;
-        flag = true;
-        matrix b = a;
-        for (int i = 0; i < border - 1; i++) {
-            for (int j = i + 1; j < border; j++) {
-                b.swap_bytes(i, j);
-                b = toSpanForm(b);
-                auto b_cmp = calculateComplexity(b);
-                if(compare_complexity(b_cmp, cmp) == -1)
+            for(size_t i = 0; i < cmp.size(); i++) {
+                if(cmp[i] != old_cmp[i])
                 {
-                    a = b;
                     flag = false;
-                    cmp = b_cmp;
                     break;
                 }
             }
-            if(!flag)
-                break;
-        }
-    }
-    flag = false;
-    iter = 0;
-    cout << "started second half" << endl;
-    while(!flag && iter < 2000) {
-        iter++;
-        cout << iter << endl;
-        flag = true;
-        matrix b = a;
-        for (int i = border; i < a[0].size() - 1; i++) {
-            for (int j = i + 1; j < a[0].size(); j++) {
-                b.swap_bytes(i, j);
-                b = toSpanForm(b);
-                auto b_cmp = calculateComplexity(b);
-                if(compare_complexity(b_cmp, cmp) == -1)
-                {
-                    a = b;
-                    flag = false;
-                    cmp = b_cmp;
-                    break;
-                }
-            }
-            if(!flag)
-                break;
         }
     }
 }
-
-
 

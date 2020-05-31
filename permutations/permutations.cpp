@@ -84,12 +84,12 @@ bool next_permut_with_n(int n, vector<int> &permut)
             permut[i + 1] = permut[i] + 1;
     }
 
-    cout <<  "(";
-    for(size_t i = 0; i < permut.size() - 1; i++)
-    {
-        cout <<permut[i] << ", ";
-    }
-    cout << permut.back() << ")" << endl;
+//    cout <<  "(";
+//    for(size_t i = 0; i < permut.size() - 1; i++)
+//    {
+//        cout <<permut[i] << ", ";
+//    }
+//    cout << permut.back() << ")" << endl;
 
     return true;
 }
@@ -275,6 +275,5 @@ pair<int, matrix> permut_with_recursion(matrix &a, int border)
     cout << c.print() << endl;
     return make_pair(res_good, toSpanForm(res_matrix));
 }
-
 
 
