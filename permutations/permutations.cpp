@@ -2,6 +2,7 @@
 // Created by Степан Прудников on 12/05/2020.
 //
 
+#include <random>
 #include "permutations.h"
 
 int permut_compl(matrix &a) {
@@ -66,6 +67,7 @@ bool next_permut(matrix &a, vector<int> &cols)
 }
 
 
+
 bool next_permut_with_n(int n, vector<int> &permut)
 {
     size_t k = permut.size() - 1;
@@ -95,6 +97,7 @@ bool next_permut_with_n(int n, vector<int> &permut)
 }
 
 
+
 int permut_compl2(matrix &a) {
     vector<int> cols(a[0].size());
     auto cmp = calculateComplexity(a);
@@ -104,6 +107,7 @@ int permut_compl2(matrix &a) {
     {
         cols[i] = i;
     }
+
     unsigned long long iter = 0;
     while(next_permut(a, cols)){
         //cout << iter << endl;
@@ -276,4 +280,56 @@ pair<int, matrix> permut_with_recursion(matrix &a, int border)
     return make_pair(res_good, toSpanForm(res_matrix));
 }
 
+pair<int, matrix> permut_with_random(matrix &a, int border, unsigned long long permut_num)
+{
+    vector<int> cols;
+    auto good_rows = a.count_good_rows();
+    auto cmp = calculateComplexity(a);
+    int res_good = good_rows.size();
+    matrix res_matrix = a;
+    matrix b;
+    matrix c;
 
+    for(size_t i = 0; i < a[0].size(); i++)
+        cols.push_back(i + 1);
+
+    unsigned long long iter = 0;
+
+
+    while(iter < permut_num)
+    {
+        unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+        shuffle (cols.begin(), cols.end(), std::default_random_engine(seed));
+        iter++;
+        cout << iter << endl;
+        b = a;
+        for(size_t i = 0; i < cols.size(); i++)
+        {
+            for(size_t j = 0; j < a.cols.size(); j++)
+            {
+                if(b.cols[j] == cols[i])
+                    b.move(i, j);
+            }
+        }
+        c = b;
+        b = toSpanForm(b);
+        good_rows = b.count_good_rows();
+        if(good_rows.size() < res_good) {
+            continue;
+        }
+        auto cur_cmp = calculateComplexity(b);
+        if(compare_complexity(cmp, cur_cmp) == 1) {
+            cout << "found" << endl << endl;
+            cout << b.print() << endl;
+            res_good = good_rows.size();
+            res_matrix = c;
+            cmp = cur_cmp;
+        }
+    }
+    a = res_matrix;
+    cols.resize(0);
+
+
+    cout << c.print() << endl;
+    return make_pair(res_good, toSpanForm(res_matrix));
+}

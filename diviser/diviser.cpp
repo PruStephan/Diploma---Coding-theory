@@ -101,21 +101,23 @@ void smart_col_swap(matrix &a) {
                     }
                 }
             }
-            if(to_swap != -1 && from_swap != -1)
+            if(to_swap != -1 && from_swap != -1) {
                 a.swap_bytes(to_swap, from_swap);
+                flag = false;
+            }
             //cout << i << endl;
             //cout << a.print() << endl;
 
         }
-        a = toSpanForm(a);
-        cmp = calculateComplexity(a);
-        for(size_t i = 0; i < cmp.size(); i++) {
-            if(cmp[i] != old_cmp[i])
-            {
-                flag = false;
-                break;
-            }
-        }
+//        a = toSpanForm(a);
+//        cmp = calculateComplexity(a);
+//        for(size_t i = 0; i < cmp.size(); i++) {
+//            if(cmp[i] != old_cmp[i])
+//            {
+//                flag = false;
+//                break;
+//            }
+//        }
         iter++;
         cout << iter << endl;
     }
@@ -170,13 +172,13 @@ void swap_in_halves(matrix &a) {
                 }
             }
         }
-        for(size_t i = 0; i < cmp.size(); i++) {
-            if(cmp[i] != old_cmp[i])
-            {
-                flag = false;
-                break;
-            }
-        }
+//        for(size_t i = 0; i < cmp.size(); i++) {
+//            if(cmp[i] != old_cmp[i])
+//            {
+//                flag = false;
+//                break;
+//            }
+//        }
     }
     flag = false;
     iter = 0;
@@ -200,13 +202,13 @@ void swap_in_halves(matrix &a) {
                     break;
                 }
             }
-            for(size_t i = 0; i < cmp.size(); i++) {
-                if(cmp[i] != old_cmp[i])
-                {
-                    flag = false;
-                    break;
-                }
-            }
+//            for(size_t i = 0; i < cmp.size(); i++) {
+//                if(cmp[i] != old_cmp[i])
+//                {
+//                    flag = false;
+//                    break;
+//                }
+
         }
     }
 }

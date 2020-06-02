@@ -128,7 +128,7 @@ matrix create_bch_matrix(const string& filepath, int code_size, int k){
     int prefix = 0;
     int suffix = code_size - d.size();
     vector<binary_array> m;
-    while (prefix + d.size() <= code_size && m.size() < k)
+    while (suffix >= 0 && m.size() < k)
     {
         vector<int> cur_pref(prefix, 0);
         vector<int> cur_suff(suffix, 0);
@@ -137,6 +137,7 @@ matrix create_bch_matrix(const string& filepath, int code_size, int k){
         cur.insert(cur.end(), d.begin(), d.end());
         cur.insert(cur.end(), cur_suff.begin(), cur_suff.end());
         m.push_back(binary_array(cur, prefix));
+        cout << m.back().print() << endl;
         prefix++;
         suffix--;
     }

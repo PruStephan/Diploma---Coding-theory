@@ -12,9 +12,9 @@ binary_array::binary_array(std::vector<int> a, int row) {
     this->row = row;
     this->actual_size = a.size();
     unsigned long long new_array = 0;
-    for(int j = 0; j < 32; j++){
+    for(unsigned long long j = 0; j < a.size(); j++){
 
-        new_array = new_array + (1u << j) * a[j];
+        new_array = new_array + (1ull << j) * (unsigned long long)a[j];
     }
     this->array = new_array;
 }
@@ -38,9 +38,9 @@ bool binary_array::operator[](const unsigned int &k) {
 std::string binary_array::print()
 {
     std::string res;
-    for(unsigned int i = 0; i < actual_size; i++)
+    for(unsigned long long i = 0; i < actual_size; i++)
     {
-        res +=  std::to_string((this->array & (1u << i)) >> i);
+        res +=  std::to_string((this->array & (1ull << i)) >> i);
         res += " ";
     }
     res+= "\n";

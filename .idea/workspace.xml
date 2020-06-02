@@ -14,19 +14,20 @@
     <list default="true" id="07976762-df72-4b1b-8c16-c6a17dd18246" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bch.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binary_array/binary_array.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/binary_array/binary_array.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/diviser/diviser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/diviser/diviser.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/permutations/permutations.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/span_form/span_form.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DiplomaProjectSpanForm.dir/span_form/span_form.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/DiplomaProjectSpanForm" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DiplomaProjectSpanForm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrix_result0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/matrix_result0.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/diviser/diviser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/diviser/diviser.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/permutations/permutations.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/permutations/permutations.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/permutations/permutations.h" beforeDir="false" afterPath="$PROJECT_DIR$/permutations/permutations.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/span_form/span_form.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/span_form/span_form.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/span_form/span_form.h" beforeDir="false" afterPath="$PROJECT_DIR$/span_form/span_form.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +112,9 @@
       <workItem from="1590217530698" duration="4661000" />
       <workItem from="1590254246660" duration="3056000" />
       <workItem from="1590490468457" duration="497000" />
-      <workItem from="1590907406324" duration="1437000" />
+      <workItem from="1590907406324" duration="2477000" />
+      <workItem from="1590990500438" duration="603000" />
+      <workItem from="1591079306038" duration="7184000" />
     </task>
     <task id="LOCAL-00001" summary="permutation of half matrix added">
       <created>1589448110697</created>
@@ -179,53 +182,48 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/permutations/permutations.cpp</url>
-          <line>43</line>
+          <line>44</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/permutations/permutations.cpp</url>
-          <line>107</line>
+          <line>111</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/diviser/diviser.cpp</url>
-          <line>127</line>
+          <line>129</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/diviser/diviser.cpp</url>
-          <line>134</line>
+          <line>136</line>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/diviser/diviser.cpp</url>
-          <line>124</line>
+          <line>126</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/diviser/diviser.cpp</url>
-          <line>138</line>
+          <line>140</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/diviser/diviser.cpp</url>
-          <line>152</line>
+          <line>154</line>
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>73</line>
+          <line>49</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/permutations/permutations.cpp</url>
-          <line>198</line>
+          <line>202</line>
           <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>35</line>
-          <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
@@ -234,21 +232,46 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/span_form/span_form.cpp</url>
-          <line>127</line>
-          <option name="timeStamp" value="78" />
+          <line>143</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>48</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/permutations/permutations.cpp</url>
+          <line>300</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/permutations/permutations.cpp</url>
+          <line>313</line>
+          <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/span_form/span_form.cpp</url>
-          <line>142</line>
-          <option name="timeStamp" value="80" />
+          <line>138</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/binary_array/binary_array.cpp</url>
+          <line>16</line>
+          <option name="timeStamp" value="93" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
-        <watch expression="good_rows.size()" language="ObjectiveC" />
-        <watch expression="b.count_good_rows().size()" language="ObjectiveC" />
-        <watch expression="a[0].size()" language="ObjectiveC" />
+        <watch expression="this-&gt;print()" language="ObjectiveC" />
+        <watch expression="1u &lt;&lt; j" language="ObjectiveC" />
+        <watch expression="1ull &lt;&lt; j" language="ObjectiveC" />
+        <watch expression="a[j]" language="ObjectiveC" />
+        <watch expression="j" language="ObjectiveC" />
+        <watch expression="new_array" language="ObjectiveC" />
+        <watch expression="a" language="ObjectiveC" />
+        <watch expression="m.back().array" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>
