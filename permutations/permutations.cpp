@@ -305,12 +305,18 @@ pair<int, matrix> permut_with_random(matrix &a, int border, unsigned long long p
         b = a;
         for(size_t i = 0; i < cols.size(); i++)
         {
+            //cout << "i: " << i << endl;
             for(size_t j = 0; j < a.cols.size(); j++)
             {
-                if(b.cols[j] == cols[i])
+                //cout << "j: " << j << endl;
+                if(b.cols[j] == cols[i]) {
+                    cout << "swapted: (" << i << ", " << j << ")" << endl;
                     b.move(i, j);
+                    cout << b.print() << endl;
+                }
             }
         }
+        cout << b.print() << endl;
         c = b;
         b = toSpanForm(b);
         good_rows = b.count_good_rows();

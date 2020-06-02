@@ -59,19 +59,25 @@ void matrix::reverse(int x, int y) {
 }
 
 void matrix::move(int to, int from) {
-    if(to < from)
+
+    int temp = to;
+    to = max(to, from);
+    from  = min(temp, from);
+
+    if (to > rows[0].size() || to < 0) {
+        cout << "to is out of bonds: " << to << endl;
+        throw "0";
+    }
+
+    if (from > rows[0].size() || from < 0) {
+        cout << "from is out of bonds: " << from << endl;
+        throw "0";
+    }
+
+    for(int i = from; i > to; --i)
     {
-        for(int i = from; i > to; --i)
-        {
-            this->swap_bytes(i, i - 1);
-            swap(this->cols[i], this->cols[i - 1]);
-        }
-    } else {
-        for(int i = from; i < to; ++i)
-        {
-            this->swap_bytes(i, i + 1);
-            swap(this->cols[i], this->cols[i + 1]);
-        }
+        this->swap_bytes(i, i - 1);
+        swap(this->cols[i], this->cols[i - 1]);
     }
 }
 

@@ -1,5 +1,4 @@
 #include "permutations/permutations.h"
-#include <chrono>
 #include <fstream>
 
 
@@ -21,15 +20,15 @@ int main() {
 
 
 //    matrix A = create_bch_matrix("/home/prustephan/Diploma-half/Diploma---Coding-theory/bch.txt", 31);
-      matrix A = load_matrix("/home/prustephan/Diploma-half/Diploma---Coding-theory/matrix4.txt");
+    //matrix A = load_matrix("/home/prustephan/Diploma-half/Diploma---Coding-theory/matrix4.txt");
 //    matrix B = load_matrix("/home/prustephan/Diploma-half/Diploma---Coding-theory/matrix2.txt");
 //    matrix C = load_matrix("/home/prustephan/Diploma-half/Diploma---Coding-theory/matrix3.txt");
 //    matrix D = load_matrix("/home/prustephan/Diploma-half/Diploma---Coding-theory/matrix4.txt");
 
 
     //matrix A(test_array);
-   //matrix A = create_bch_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/bch.txt", 63, 45);
-    //matrix A = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix.txt");
+    //matrix A = create_bch_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/bch.txt", 63, 45);
+    matrix A = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix4.txt");
 //    matrix B = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix2.txt");
 //    matrix C = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix3.txt");
 //    matrix D = load_matrix("/Users/stephan/CLionProjects/DiplomaLongLong/matrix4.txt");
@@ -46,11 +45,11 @@ int main() {
 
 
             cout << test[i].print() << endl;
-            //auto res = permut_with_random(test[i], test[i][0].size() / 2, 200);
+            auto res = permut_with_random(test[i], test[i][0].size() / 2, 3000000000);
             //auto res = permut_with_recursion(test[i], test[i][0].size() / 2);
             //auto res2 = permut_first_half(test[i]);
 
-            matrix cur = test[i];
+            matrix cur = res.second;
             //swap_in_halves(cur);
             //smart_col_swap(cur);
 
