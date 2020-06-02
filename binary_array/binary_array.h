@@ -34,5 +34,5 @@ public:
     int findFirst1();
     int findLast1();
     std::string print();
-    void swap_bytes(unsigned int i, unsigned int j);
+    void swap_bytes(unsigned long long i, unsigned long long j);
 };

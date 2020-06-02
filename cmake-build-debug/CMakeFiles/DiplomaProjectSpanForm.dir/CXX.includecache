@@ -6,23 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/Users/stephan/CLionProjects/DiplomaLongLong/binary_array/binary_array.cpp
+binary_array.h
+/Users/stephan/CLionProjects/DiplomaLongLong/binary_array/binary_array.h
+
 /Users/stephan/CLionProjects/DiplomaLongLong/binary_array/binary_array.h
 iostream
 -
 vector
 -
 string
--
-
-/Users/stephan/CLionProjects/DiplomaLongLong/matrix/matrix.cpp
-matrix.h
-/Users/stephan/CLionProjects/DiplomaLongLong/matrix/matrix.h
-
-/Users/stephan/CLionProjects/DiplomaLongLong/matrix/matrix.h
-../binary_array/binary_array.h
-/Users/stephan/CLionProjects/DiplomaLongLong/binary_array/binary_array.h
-algorithm
--
-set
 -
 

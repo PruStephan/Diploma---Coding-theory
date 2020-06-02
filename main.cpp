@@ -38,6 +38,7 @@ int main() {
     //smart_col_swap(A);
     //swap_in_halves(A);
     cout << A.print() << endl;
+    //cout << toSpanForm(A) << endl;
     for(int i = 0; i < test.size(); i++)
     {
         ofstream out(out_filepath + to_string(i) + ".txt");

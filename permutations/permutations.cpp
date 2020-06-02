@@ -316,7 +316,7 @@ pair<int, matrix> permut_with_random(matrix &a, int border, unsigned long long p
                 }
             }
         }
-        cout << b.print() << endl;
+      //  cout << b.print() << endl;
         c = b;
         b = toSpanForm(b);
         good_rows = b.count_good_rows();
@@ -326,7 +326,7 @@ pair<int, matrix> permut_with_random(matrix &a, int border, unsigned long long p
         auto cur_cmp = calculateComplexity(b);
         if(compare_complexity(cmp, cur_cmp) == 1) {
             cout << "found" << endl << endl;
-            cout << b.print() << endl;
+            cout << c.print() << endl;
             res_good = good_rows.size();
             res_matrix = c;
             cmp = cur_cmp;

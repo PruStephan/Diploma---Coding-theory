@@ -81,11 +81,11 @@ int binary_array::findLast1() {
     return -1;
 }
 
-void binary_array::swap_bytes(unsigned int i, unsigned int j) {
+void binary_array::swap_bytes(unsigned long long i, unsigned long long j) {
     if(i >= actual_size || j >= actual_size)
         throw "i or j is greater than actual size";
-    unsigned int tmp = (this->array & (1u << i)) >> i;
-    unsigned int jth = (this->array & (1u << j)) >> j;
-    this->array ^= (-jth ^ this->array) & (1UL << i);
-    this->array ^= (-tmp ^ this->array) & (1u << j);
+    unsigned long long tmp = (this->array & (1ull << i)) >> i;
+    unsigned long long jth = (this->array & (1ull << j)) >> j;
+    this->array ^= (-jth ^ this->array) & (1ull << i);
+    this->array ^= (-tmp ^ this->array) & (1ull << j);
 }
