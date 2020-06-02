@@ -310,9 +310,9 @@ pair<int, matrix> permut_with_random(matrix &a, int border, unsigned long long p
             {
                 //cout << "j: " << j << endl;
                 if(b.cols[j] == cols[i]) {
-                    cout << "swapted: (" << i << ", " << j << ")" << endl;
+             //       cout << "swapted: (" << i << ", " << j << ")" << endl;
                     b.move(i, j);
-                    cout << b.print() << endl;
+               //     cout << b.print() << endl;
                 }
             }
         }
